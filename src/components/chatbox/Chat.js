@@ -12,13 +12,13 @@ const Chat = () => {
   let [message, setMessage] = useState("")
 
   let array = [
-    { img: "download (1).jpg", title: "Soul Armstrong", time: "2:30PM", desc: "Hey there i am using EnvoyChat" },
-    { img: "3.jpg", title: "Rockey", time: "3:30PM", desc: "Only Available on envoyCan" },
-    { img: "Einstein.jpg", title: "Einstein", time: "4:00AM", desc: "Hey there i am using EnvoyChat" },
-    { img: "download.jpg", title: "Keyrin", time: "4:00AM", desc: "Only Available on envoyCan" },
-    { img: "download (1).jpg", title: "Soul Armstrong", time: "2:30PM", desc: "Hey there i am using EnvoyChat" },
-    { img: "3.jpg", title: "Rockey", time: "3:30PM", desc: "Only Available on envoyCan" },
-    { img: "Einstein.jpg", title: "Einstein", time: "4:00AM", desc: "Hey there i am using EnvoyChat" },
+    { img: "download (1).jpg", title: "Soul Armstrong", time: "2:30PM", desc: "Hey there i am using EnvoyChat", msg: "3" },
+    { img: "3.jpg", title: "Rockey", time: "3:30PM", desc: "Hey there i am using EnvoyChat" },
+    { img: "Einstein.jpg", title: "Einstein", time: "4:00AM", desc: "Hey there i am using EnvoyChat", msg: "3" },
+    { img: "download.jpg", title: "Keyrin", time: "4:00AM", desc: "Hey there i am using EnvoyChat" },
+    { img: "download (1).jpg", title: "Soul Armstrong", time: "2:30PM", desc: "Hey there i am using EnvoyChat", msg: "3" },
+    { img: "3.jpg", title: "Rockey", time: "3:30PM", desc: "Hey there i am using EnvoyChat" },
+    { img: "Einstein.jpg", title: "Einstein", time: "4:00AM", desc: "Hey there i am using EnvoyChat", msg: "3" },
   ]
 
   let {
@@ -54,31 +54,35 @@ const Chat = () => {
             onChange={(SearchInput)}
           />
         </div>
-
-        {array.filter((data) => {
-          const lowerCaseTitle = data.title.toLowerCase();
-          let lowerCaseSearch = search.toLowerCase();
-          return (
-            lowerCaseTitle.includes(lowerCaseSearch)
-          );
-        })
-          .map((data) => {
-            return <div className='d-flex gap-3 align-items-center pt-3 px-1 profiles' style={
-              {
-                borderBottom: "1px solid rgb(114, 113, 113)",
-              }}
-            >
-              <img src={data.img} alt="" className='chat_img' />
-              <div>
-                <div className='d-flex justify-content-between' style={{ lineHeight: "15px" }}>
-                  <p>{data.title}</p>
-                  <p>{data.time}</p>
-                </div>
-                <p style={{ color: "rgb(177, 173, 173)" }}>{data.desc.slice(0, 25)}...</p>
-              </div>
-            </div>
+        {array
+          .filter((data) => {
+            const lowerCaseTitle = data.title.toLowerCase();
+            const lowerCaseSearch = search.toLowerCase();
+            return lowerCaseTitle.includes(lowerCaseSearch);
           })
-        }
+          .map((data) => {
+            return (
+              <div
+                className='d-flex gap-3 align-items-center pt-3 px-1 profiles'
+                style={{
+                  borderBottom: '1px solid rgb(114, 113, 113)',
+                }}
+              >
+                <img src={data.img} alt='' className='chat_img' />
+                <div>
+                  <div className='d-flex justify-content-between' style={{ lineHeight: '15px' }}>
+                    <p style={{ fontSize: '15px' }}>{data.title}</p>
+                    <p style={{ fontSize: '13px', color: 'rgb(177, 173, 173)' }}>{data.time}</p>
+                  </div>
+                  <div className='d-flex'>
+                    <p style={{ fontSize: '13px', color: 'rgb(177, 173, 173)' }}>{data.desc.slice(0, 29)}...</p>
+                    {data.msg && <div className='message_counter'>{data.msg}</div>}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+
       </div>
 
       <div className='col-lg-8 col-sm-12 chat_box'>
@@ -89,7 +93,7 @@ const Chat = () => {
           <div className='d-flex gap-3 align-items-center' style={{ alignItems: 'center', verticalAlign: "middle" }}>
             <img src="download (1).jpg" className="chat_img" style={{ width: "38px", height: "38px" }} alt="" />
             <div className='d-flex align-items-center'>
-           <span> Soul Armstrong</span>   
+              <span> Soul Armstrong</span>
             </div>
           </div>
           <div style={{ marginLeft: "auto" }}>
