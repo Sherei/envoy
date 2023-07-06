@@ -38,7 +38,7 @@ const Profile = () => {
               <p className='py-2 px-4' style={{ backgroundColor: "rgb(54,54,54)" }}>General</p>
               <div className='d-flex gap-2 align-items-center'>
                 <span style={{ color: "grey", fontSize: "15px" }}><FaMoon /></span>
-                  <span className='d-flex align-items-center py-1 px-1' style={{ marginTop: "2px", fontSize: "15px" }}>Dark Mode</span>
+                  <span className='d-flex align-items-center py-1 px-1' style={{ marginTop: "5px", fontSize: "15px" }}>Dark Mode</span>
                 <div style={{ marginLeft: "auto" }}>
                   <label class="switch">
                     <input type="checkbox" />
@@ -49,7 +49,7 @@ const Profile = () => {
               {array.map((data) => {
                 return <div className='d-flex gap-2 px-1 menu_hover1 align-items-center'>
                   <span style={{ color: "grey", fontSize: "15px" }}>{data.icon1}</span>
-                  <span className='d-flex align-items-center py-1 px-1' style={{ marginTop: "2px", fontSize: "15px" }}>{data.title}</span>
+                  <span className='d-flex align-items-center py-1 px-1' style={{ marginTop: "5px", fontSize: "15px" }}>{data.title}</span>
                   <div style={{ marginLeft: "auto", fontSize: "15px" }}>
                     {data.icon2}
                   </div>
@@ -64,7 +64,7 @@ const Profile = () => {
               {array2.map((data) => {
                 return <div className='d-flex gap-2 px-1 menu_hover1 align-items-center'>
                   <span style={{ color: "grey", fontSize: "15px" }}>{data.icon1}</span>
-                  <span className='d-flex align-items-center py-1 px-1' style={{ marginTop: "2px", fontSize: "15px" }}>{data.title}</span>
+                  <span className='d-flex align-items-center py-1 px-1' style={{ marginTop: "5px", fontSize: "15px" }}>{data.title}</span>
                   <div style={{ marginLeft: "auto", fontSize: "15px" }}>
                     {data.icon2}
                   </div>
