@@ -69,7 +69,7 @@ const Chat = () => {
                 }}
               >
                 <img src={data.img} alt='' className='chat_img' />
-                <div>
+                <div style={{width:"100%", position:"relative"}}>
                   <div className='d-flex justify-content-between' style={{ lineHeight: '15px' }}>
                     <p style={{ fontSize: '15px' }}>{data.title}</p>
                     <p style={{ fontSize: '13px', color: 'rgb(177, 173, 173)' }}>{data.time}</p>

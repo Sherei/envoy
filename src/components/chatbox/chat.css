@@ -133,6 +133,10 @@
     border: none;
     outline: none;
     color: white;
+} 
+.message_counter{
+    position: absolute;
+    right: 0px;
 }
 
 .bottom_icon {
