@@ -36,9 +36,9 @@ const Profile = () => {
             </div>
             <div>
               <p className='py-2 px-4' style={{ backgroundColor: "rgb(54,54,54)" }}>General</p>
-              <div className='d-flex gap-2'>
+              <div className='d-flex gap-2 align-items-center'>
                 <span style={{ color: "grey", fontSize: "15px" }}><FaMoon /></span>
-                <p style={{ marginTop: "2px", fontSize: "15px" }}>Dark Mode</p>
+                  <span className='d-flex align-items-center py-1 px-1' style={{ marginTop: "2px", fontSize: "15px" }}>Dark Mode</span>
                 <div style={{ marginLeft: "auto" }}>
                   <label class="switch">
                     <input type="checkbox" />
@@ -47,9 +47,9 @@ const Profile = () => {
                 </div>
               </div>
               {array.map((data) => {
-                return <div className='d-flex gap-2 menu_hover1'>
+                return <div className='d-flex gap-2 px-1 menu_hover1 align-items-center'>
                   <span style={{ color: "grey", fontSize: "15px" }}>{data.icon1}</span>
-                  <p style={{ marginTop: "2px", fontSize: "15px" }}>{data.title}</p>
+                  <span className='d-flex align-items-center py-1 px-1' style={{ marginTop: "2px", fontSize: "15px" }}>{data.title}</span>
                   <div style={{ marginLeft: "auto", fontSize: "15px" }}>
                     {data.icon2}
                   </div>
@@ -62,9 +62,9 @@ const Profile = () => {
               <p className='py-2 px-4' style={{ backgroundColor: "rgb(54,54,54)" }}>About App</p>
 
               {array2.map((data) => {
-                return <div className='d-flex gap-2 menu_hover1'>
+                return <div className='d-flex gap-2 px-1 menu_hover1 align-items-center'>
                   <span style={{ color: "grey", fontSize: "15px" }}>{data.icon1}</span>
-                  <p style={{ marginTop: "2px", fontSize: "15px" }}>{data.title}</p>
+                  <span className='d-flex align-items-center py-1 px-1' style={{ marginTop: "2px", fontSize: "15px" }}>{data.title}</span>
                   <div style={{ marginLeft: "auto", fontSize: "15px" }}>
                     {data.icon2}
                   </div>
