@@ -153,9 +153,8 @@ const Chat = () => {
             }} >
             <div>
               <p className=' card_msg' style={{ color: "white" }} >Hello here is picture Hello here is picture </p>
-              <div className='d-flex justify-content-between'>
+              <div className='d-flex justify-content-end'>
                 <p className='card_msg' style={{ color: "grey", fontSize: "13px" }} >16:40</p>
-                <p className='card_msg' style={{ color: "grey", fontSize: "13px" }} >See translation</p>
               </div>
             </div>
           </div>
@@ -174,9 +173,8 @@ const Chat = () => {
             <img src="susan-g-komen-3-day-nsQj12P4uiI-unsplash.jpg" alt="" className='border' style={{ width: "230px", height: "130px", borderRadius: "5px" }} />
             <div>
               <p className=' card_msg' style={{ color: "white" }} >Hello here is picture </p>
-              <div className='d-flex justify-content-between'>
+              <div className='d-flex justify-content-end'>
                 <p className='card_msg' style={{ color: "grey", fontSize: "13px" }} >16:40</p>
-                <p className='card_msg' style={{ color: "grey", fontSize: "13px" }} >See translation</p>
               </div>
             </div>
 
