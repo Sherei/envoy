@@ -164,8 +164,12 @@
     color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     .row1 {
         margin-bottom: 2rem;
     }
+    .chat_start{
+        height: 58vh;
+    }
+
 }
