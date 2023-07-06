@@ -83,14 +83,14 @@ const Chat = () => {
 
       <div className='col-lg-8 col-sm-12 chat_box'>
         <div className='chat_head'>
-          <div className='icon'>
+          <div className='icon d-flex align-items-center'>
             <FaAngleLeft />
           </div>
           <div className='d-flex gap-3 align-items-center' style={{ alignItems: 'center', verticalAlign: "middle" }}>
-            <div>
-              <img src="download (1).jpg" className="chat_img" style={{ width: "38px", height: "38px" }} alt="" />
+            <img src="download (1).jpg" className="chat_img" style={{ width: "38px", height: "38px" }} alt="" />
+            <div className='d-flex align-items-center'>
+           <span> Soul Armstrong</span>   
             </div>
-            <p>Soul Armstrong</p>
           </div>
           <div style={{ marginLeft: "auto" }}>
             <BsThreeDotsVertical />

@@ -73,7 +73,7 @@
 
 .chat_box {
     /* border: 1px solid white; */
-    height: 80vh;
+    height: 81vh;
     background-color: aliceblue;
     border-radius: 15px;
     background-image: url("./HD-wallpaper-pattern-black-dark-grey-shape-thumbnail.jpg");
@@ -85,10 +85,10 @@
 
 .chat_head {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     background-color: rgb(34, 34, 34);
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem ;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -101,7 +101,7 @@
 }
 
 .chat_start {
-    height: 62vh;
+    height: 64.2vh;
     overflow: auto;
     /* background-color: white; */
 }
