@@ -158,9 +158,7 @@ const Chat = () => {
               </div>
             </div>
           </div>
-
-
-
+          
           <div className='chat_box2 mb-3' style={
             {
               border: "none",
