@@ -10,7 +10,6 @@ body{
   flex-direction: column;
   color: white;
   flex-wrap: wrap;
-  /* overflow: hidden; */
   margin: 0px;
   padding: 0px;
 }
