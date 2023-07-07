@@ -12,11 +12,11 @@ const Chat = () => {
   let [message, setMessage] = useState("")
 
   let array = [
-    { img: "download (1).jpg", title: "Soul Armstrong", time: "2:30PM", desc: "Hey there i am using EnvoyChat", msg: "3" },
-    { img: "3.jpg", title: "Rockey", time: "3:30PM", desc: "Hey there i am using EnvoyChat" },
-    { img: "Einstein.jpg", title: "Einstein", time: "4:00AM", desc: "Hey there i am using EnvoyChat", msg: "3" },
+    { img: "download (1).jpg", title: "Soul Armstrong", time: "2:30PM", desc: "Hey there ", msg: "3" },
+    { img: "download (1).jpg", title: "Rockey", time: "3:30PM", desc: "Hey there i am using EnvoyChat" },
+    { img: "Einstein.jpg", title: "Einstein", time: "4:00AM", desc: "Hey theret", msg: "3" },
     { img: "download.jpg", title: "Keyrin", time: "4:00AM", desc: "Hey there i am using EnvoyChat" },
-    { img: "download (1).jpg", title: "Soul Armstrong", time: "2:30PM", desc: "Hey there i am using EnvoyChat", msg: "3" },
+    { img: "download (1).jpg", title: "Soul Armstrong", time: "2:30PM", desc: "Hey there ", msg: "3" },
     { img: "3.jpg", title: "Rockey", time: "3:30PM", desc: "Hey there i am using EnvoyChat" },
     { img: "Einstein.jpg", title: "Einstein", time: "4:00AM", desc: "Hey there i am using EnvoyChat", msg: "3" },
   ]
@@ -55,39 +55,47 @@ const Chat = () => {
           />
         </div>
         {array.filter((data) => {
-      const lowerCaseTitle = data.title.toLowerCase();
-      const lowerCaseSearch = search.toLowerCase();
-      return lowerCaseTitle.includes(lowerCaseSearch);
-    }).length === 0 ? (
-      <p>No chat available with this name</p>
-    ) : (
-      array
-        .filter((data) => {
           const lowerCaseTitle = data.title.toLowerCase();
           const lowerCaseSearch = search.toLowerCase();
           return lowerCaseTitle.includes(lowerCaseSearch);
-        })
-        .map((data) => (
-          <div
-            className='d-flex gap-3 align-items-center pt-3 px-1 profiles'
-            style={{
-              borderBottom: '1px solid rgb(114, 113, 113)',
-            }}
-          >
-            <img src={data.img} alt='' className='chat_img' />
-            <div style={{ width: '100%', position: 'relative' }}>
-              <div className='d-flex justify-content-between' style={{ lineHeight: '15px' }}>
-                <p style={{ fontSize: '15px' }}>{data.title}</p>
-                <p style={{ fontSize: '13px', color: 'rgb(177, 173, 173)' }}>{data.time}</p>
+        }).length === 0 ? (
+          <p>No chat available with this name</p>
+        ) : (
+          array
+            .filter((data) => {
+              const lowerCaseTitle = data.title.toLowerCase();
+              const lowerCaseSearch = search.toLowerCase();
+              return lowerCaseTitle.includes(lowerCaseSearch);
+            })
+            .map((data) => (
+              <div
+                className='d-flex gap-3 align-items-center pt-3 px-1 profiles'
+                style={{
+                  position: "relative",
+                  borderBottom: '1px solid rgb(114, 113, 113)',
+                }}
+              >
+                <img src={data.img} alt='' className='chat_img' />
+                <div className='' style={{ width: '100%', position: 'relative' }}>
+                  <div className='d-flex justify-content-between' style={{ lineHeight: '15px' }}>
+                    <p style={{ fontSize: '15px' }}>{data.title}</p>
+                    <p style={{ fontSize: '13px', color: 'rgb(177, 173, 173)' }}>{data.time}</p>
+                  </div>
+                  <div className='d-flex' >
+                    <p style={{
+                      fontSize: '13px', color: 'rgb(177, 173, 173)',
+
+                    }}>{data.desc.slice(0, 29)}</p>
+                    {data.msg && <div className='message_counter' style={{
+                      position: "absolute",
+                      bottom: "10px",
+                      right: "10px"
+                    }}>{data.msg}</div>}
+                  </div>
+                </div>
               </div>
-              <div className='d-flex'>
-                <p style={{ fontSize: '13px', color: 'rgb(177, 173, 173)' }}>{data.desc.slice(0, 29)}...</p>
-                {data.msg && <div className='message_counter'>{data.msg}</div>}
-              </div>
-            </div>
-          </div>
-        ))
-    )}
+            ))
+        )}
 
       </div>
 
