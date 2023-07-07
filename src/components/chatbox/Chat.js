@@ -92,7 +92,7 @@ const Chat = () => {
       </div>
 
       <div className='col-lg-8 col-sm-12  chat_box'>
-        <div className='chat_head border'>
+        <div className='chat_head '>
           <div className='icon d-flex align-items-center'>
             <FaAngleLeft />
           </div>
