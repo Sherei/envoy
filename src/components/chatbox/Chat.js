@@ -101,7 +101,7 @@ const Chat = () => {
           </div>
         </div>
 
-        <div className='chat_start px-3'>
+        <div className='chat_start px-3 '>
           <div className='chat_box2 mb-3' style={
             {
               border: "none",
@@ -180,7 +180,7 @@ const Chat = () => {
         </div>
 
 
-        <div className='px-3 pb-3' >
+        <div className='px-3' >
           <div className='chat_bottom'>
             <input type="text" placeholder='Write a message ....'
               value={message || transcript}
