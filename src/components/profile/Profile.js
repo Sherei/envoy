@@ -6,7 +6,8 @@ import { SiAdguard } from "react-icons/si";
 import { PiNotepad } from "react-icons/pi";
 import { TbClockHour12 } from "react-icons/tb";
 import { BsHammer } from "react-icons/bs";
-import "./profile.css"
+import "./profile.css";
+
 const Profile = () => {
 
   let array = [
