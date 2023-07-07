@@ -110,7 +110,7 @@ const Chat = () => {
               borderTopRightRadius: "10px",
               borderBottomRightRadius: "10px",
             }} >
-            <img src="susan-g-komen-3-day-nsQj12P4uiI-unsplash.jpg" alt="" className='' style={{ width: "320px", height: "130px", borderRadius: "5px" }} />
+            <img src="susan-g-komen-3-day-nsQj12P4uiI-unsplash.jpg" alt="" className='' style={{ width: "250px", height: "130px", borderRadius: "5px" }} />
             <div>
               <p className=' card_msg' style={{ color: "black" }} >Hello here is picture </p>
               <div className='d-flex justify-content-between'>
