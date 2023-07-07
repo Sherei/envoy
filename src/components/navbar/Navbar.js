@@ -4,7 +4,7 @@ import "./navbar.css"
 const Navbar = () => {
   return <>
     <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#212121" }}>
-      <div className="container-fluid px-5">
+      <div className="container-fluid pe-5">
         <a className="navbar-brand" href="/"><img src="logo.png" /></a>
         <div className='search_main'>
           <span className='mx-2'><FaSearch /></span>
