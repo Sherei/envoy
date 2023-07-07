@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaMoon, FaAngleRight, FaUnlockAlt, FaHeart, FaStar } from "react-icons/fa";
+import { FaMoon, FaAngleRight, FaUnlockAlt, FaHeart, FaStar,FaReact } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
 import { MdContactSupport } from "react-icons/md";
 import { SiAdguard } from "react-icons/si";
@@ -11,7 +11,7 @@ const Profile = () => {
 
   let array = [
     { title: "Help Center", icon1: <FaUnlockAlt />, icon2: <FaAngleRight /> },
-    { title: "App Language", icon1: <FaUnlockAlt />, icon2: <FaAngleRight /> },
+    { title: "App Language", icon1: <FaReact />, icon2: <FaAngleRight /> },
     { title: "Favourite Service", icon1: <FaHeart />, icon2: <FaAngleRight /> },
     { title: "Address", icon1: <HiLocationMarker />, icon2: <FaAngleRight /> },
     { title: "Supports and live chat", icon1: <MdContactSupport />, icon2: <FaAngleRight /> },
@@ -59,7 +59,7 @@ const Profile = () => {
               }
             </div>
             <div>
-              <p className='py-2 px-4' style={{ backgroundColor: "rgb(54,54,54)" }}>About App</p>
+              <p className='py-2 px-4 mt-3' style={{ backgroundColor: "rgb(54,54,54)" }}>About App</p>
 
               {array2.map((data) => {
                 return <div className='d-flex gap-2 px-1 menu_hover1 align-items-center'>
