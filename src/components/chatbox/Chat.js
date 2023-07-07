@@ -40,9 +40,9 @@ const Chat = () => {
     setMessage(e.target.value || transcript || (e.target.value && transcript))
     resetTranscript()
   }
-  if (!browserSupportsSpeechRecognition) {
-    return <h1>Your Browser doesn't Support Speech Recognition.</h1>;
-  }
+  // if (!browserSupportsSpeechRecognition) {
+  //   return <h1>Your Browser doesn't Support Speech Recognition.</h1>;
+  // }
 
   return <div className='container-fluid p-0 mt-4 chat '>
     <div className='row pt-3 px-2 pt-0'>
