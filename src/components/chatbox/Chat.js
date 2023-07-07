@@ -17,7 +17,7 @@ const Chat = () => {
     { img: "Einstein.jpg", title: "Einstein", time: "4:00AM", desc: "Hey theret", msg: "3" },
     { img: "download.jpg", title: "Keyrin", time: "4:00AM", desc: "Hey there i am using EnvoyChat" },
     { img: "download (1).jpg", title: "Soul Armstrong", time: "2:30PM", desc: "Hey there ", msg: "3" },
-    { img: "3.jpg", title: "Rockey", time: "3:30PM", desc: "Hey there i am using EnvoyChat" },
+    { img: "download.jpg", title: "Rockey", time: "3:30PM", desc: "Hey there i am using EnvoyChat" },
     { img: "Einstein.jpg", title: "Einstein", time: "4:00AM", desc: "Hey there i am using EnvoyChat", msg: "3" },
   ]
 
